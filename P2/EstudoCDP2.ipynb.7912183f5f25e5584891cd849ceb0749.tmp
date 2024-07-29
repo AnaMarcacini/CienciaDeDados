@@ -1,0 +1,13 @@
+fig, ax = plt.subplots(figsize=(10,8))
+sns.histplot(data=flights, x='arr_delay', ax=ax, kde=True)
+threashold = flights['arr_delay'].quantile(0.8)
+
+ax2 = ax.twinx()
+
+sns.ecdfplot(data=flights, x='arr_delay',color='g', ax=ax2)
+ax2.axvline(threashold, color='r', linestyle='--')
+ax2.fill_betweenx(ax2.get_ylim(), threashold, flights['arr_delay'].max(), color='red', alpha=0.2)
+
+plt.title('Distribuição e densidade de probabilidade acumulada')
+
+plt.show()

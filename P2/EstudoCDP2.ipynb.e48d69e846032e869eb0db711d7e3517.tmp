@@ -1,0 +1,12 @@
+from scipy.stats import ttest_rel
+
+stat, p_valor = ttest_rel(1.03*df['After'], df['Before'])
+
+print("Estatística t:", stat)
+print("Valor p:", p_valor)
+print()
+
+if p_valor < 0.05:
+    print("Rejeitamos a hipótese nula - as médias são estatisticamente diferentes.")
+else:
+    print("Não rejeitamos a hipótese nula - não há evidências suficientes para afirmar diferença nas médias.")

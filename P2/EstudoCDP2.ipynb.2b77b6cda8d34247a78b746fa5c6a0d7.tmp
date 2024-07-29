@@ -1,0 +1,3 @@
+plt.figure(figsize=(15,8))
+sns.boxplot(data=flights, x='name', y='arr_delay')
+plt.show()

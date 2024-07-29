@@ -1,0 +1,1 @@
+df_last_years = df[df['year'].isin(years) & df['state'].isin(states)]

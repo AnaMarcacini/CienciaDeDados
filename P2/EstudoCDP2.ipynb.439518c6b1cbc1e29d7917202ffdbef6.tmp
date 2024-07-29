@@ -1,0 +1,11 @@
+# Parâmetros
+n = 10  # número de tentativas
+p = 0.5  # probabilidade de sucesso
+
+# CDF
+cdf_value = binom.cdf(k=5, n=n, p=p)
+print("Binomial CDF:", cdf_value)
+
+# PPF
+ppf_value = binom.ppf(q=0.95, n=n, p=p)
+print("Binomial PPF:", ppf_value)

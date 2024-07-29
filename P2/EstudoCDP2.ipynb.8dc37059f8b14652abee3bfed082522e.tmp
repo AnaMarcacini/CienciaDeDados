@@ -1,0 +1,15 @@
+companhias = ['falcon', 'bee', 'lion', 'zebra', 'bird', 'camel', 'butterfly']
+
+df_ano = pd.DataFrame({"A": np.random.normal(0, 1, 1000),
+                   "B": np.random.normal(1, 1, 1000),
+                   "C": np.random.normal(-1, 1, 1000),
+                   "D": np.random.normal(0, 0.5, 1000),
+                   "Ano": np.random.randint(1950, 2024, 1000)})
+
+df_companhias = pd.DataFrame({"A": np.random.normal(0, 1, 1000),
+                   "B": np.random.normal(1, 1, 1000),
+                   "C": np.random.normal(-1, 1, 1000),
+                   "D": np.random.normal(0, 0.5, 1000),
+                   "Ano": np.random.randint(1950, 2024, 1000),
+                   "Companhias": np.random.choice(companhias, size=len(df_ano))})
+

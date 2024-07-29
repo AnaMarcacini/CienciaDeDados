@@ -1,0 +1,2 @@
+outliers = f['fliers'][0].get_data()[1]
+outliers

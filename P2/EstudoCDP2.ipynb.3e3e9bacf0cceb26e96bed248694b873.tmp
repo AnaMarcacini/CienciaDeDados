@@ -1,0 +1,3 @@
+np.random.seed(1)
+expon_samples = expon.rvs(scale=5000, size=sample_size)
+expon_samples[:10]

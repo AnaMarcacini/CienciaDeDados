@@ -1,0 +1,3 @@
+from scipy.stats import levene
+
+stat, p = levene(a, b)

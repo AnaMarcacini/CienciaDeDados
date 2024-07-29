@@ -1,0 +1,11 @@
+# Parâmetros
+loc = 0  # limite inferior
+scale = 1  # largura do intervalo
+
+# CDF
+cdf_value = uniform.cdf(x=0.5, loc=loc, scale=scale)
+print("CDF:", cdf_value)
+
+# PPF
+ppf_value = uniform.ppf(q=0.95, loc=loc, scale=scale)
+print("PPF:", ppf_value)

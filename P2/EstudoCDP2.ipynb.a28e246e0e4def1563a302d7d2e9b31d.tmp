@@ -1,0 +1,22 @@
+from scipy.stats import mannwhitneyu
+
+results = pd.DataFrame(columns=['device','stat Mann-Whitney','p-value','H0-Rejected'])
+
+stat, p_valor = mannwhitneyu(df[df['Gênero'] == 'Feminino']['pontuacao'], df[df['Gênero'] == 'Masculino']['pontuacao'])
+results.loc[len(results)] = ['all',np.round(stat,4),np.round(p_valor,4),p_valor < 0.05]
+
+for device in df.device.unique():
+  select = df['device'] == device
+  stat, p_valor = mannwhitneyu(df[(df['Gênero'] == 'Feminino') & (select)]['pontuacao'], df[(df['Gênero'] == 'Masculino') & (select)]['pontuacao'])
+  results.loc[len(results)] = [device,np.round(stat,4),np.round(p_valor,4),p_valor < 0.05]
+
+  print('Device =', device)
+  print("Estatística:", stat)
+  print("Valor p:", p_valor)
+  if p_valor < 0.05:
+      print("Rejeitamos a hipótese nula - as distribuições dos dados são estatisticamente diferentes.")
+  else:
+      print("Não rejeitamos a hipótese nula - não há evidências suficientes para afirmar diferença nas distribuições dos dados.")
+  print()
+
+results

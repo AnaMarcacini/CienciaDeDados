@@ -1,0 +1,2 @@
+latex_results = gera_df_stats_latex(results,'Influência do Gênero na Preferência e Percepção de Desafio')
+display(Latex(latex_results))

@@ -1,0 +1,3 @@
+columns = ['A','B','C','D']
+for column in columns:
+  df_ano[column] = (df_ano[column] - df_ano[column].mean()) / df_ano[column].std()

@@ -1,0 +1,4 @@
+
+# Recalcular a correlação de Pearson
+correlation_matrix_no_outliers = df_no_outliers.corr()
+correlation_matrix_no_outliers['SalePrice'].sort_values(ascending=False)

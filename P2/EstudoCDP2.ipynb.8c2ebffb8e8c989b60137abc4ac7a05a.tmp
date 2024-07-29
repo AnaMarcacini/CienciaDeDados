@@ -1,0 +1,4 @@
+if t_test[1] < 0.05:
+    print("Rejeitamos a hipótese nula - as médias são estatisticamente diferentes.")
+else:
+    print("Não rejeitamos a hipótese nula - não há evidências suficientes para afirmar diferença nas médias.")

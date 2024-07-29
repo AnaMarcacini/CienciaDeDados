@@ -1,0 +1,6 @@
+plt.figure()
+sns.barplot(data=df, x='Ano', y='B',estimator='mean')
+plt.xlabel('A')
+plt.ylabel('B')
+plt.title('Gráfico de Barra')
+plt.show()

@@ -1,0 +1,2 @@
+df = pd.read_csv(path + 'task_before_after.csv',index_col=0)
+df.head()

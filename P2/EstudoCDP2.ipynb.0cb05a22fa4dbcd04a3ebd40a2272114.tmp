@@ -1,0 +1,8 @@
+plt.figure(figsize=(10,6))
+sns.lineplot(x=normal_samples, y=y)
+plt.axvline(x=5000, color='r', linestyle='--')
+plt.fill_betweenx([0, 1], x1=4300, x2=5000, alpha=0.3, color='blue')
+
+plt.xlabel('Valores')
+plt.ylabel('Probabilidade')
+plt.title('Distribuição Normal')

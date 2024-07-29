@@ -1,0 +1,36 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Calcular o ponto de corte para os 20% maiores atrasos
+penalty_threshold = np.percentile(flights['arr_delay'], 80)
+
+# Criar a figura e o eixo principal
+fig, ax1 = plt.subplots(figsize=(14, 7))
+
+# Gráfico de distribuição
+sns.histplot(flights['arr_delay'], bins=50, kde=True, ax=ax1, color='blue')
+ax1.axvline(penalty_threshold, color='red', linestyle='--')
+ax1.fill_betweenx([0, ax1.get_ylim()[1]], penalty_threshold, flights['arr_delay'].max(), color='red', alpha=0.3)
+ax1.set_title('Distribution and Cumulative Distribution Function of Arrival Delays')
+ax1.set_xlabel('Arrival Delay (minutes)')
+ax1.set_ylabel('Frequency')
+ax1.grid(True)
+
+# Criar um segundo eixo y para o CDF
+ax2 = ax1.twinx()
+
+# Gráfico de densidade de probabilidade acumulada
+sns.ecdfplot(flights['arr_delay'], ax=ax2, color='green')
+ax2.axvline(penalty_threshold, color='red', linestyle='--')
+ax2.fill_betweenx([0, 1], penalty_threshold, flights['arr_delay'].max(), color='red', alpha=0.3)
+ax2.set_ylabel('Cumulative Probability')
+ax2.grid(False)
+
+# Mostrar a figura
+plt.tight_layout()
+plt.show()
+
+# Identificar as companhias que seriam penalizadas
+penalized_companies = flights[flights['arr_delay'] > penalty_threshold]['name'].unique()
+penalized_companies
+len(penalized_companies)

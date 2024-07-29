@@ -1,0 +1,3 @@
+from scipy.stats import ttest_rel
+
+stat, p = ttest_rel(a, b, alternative='two-sided')

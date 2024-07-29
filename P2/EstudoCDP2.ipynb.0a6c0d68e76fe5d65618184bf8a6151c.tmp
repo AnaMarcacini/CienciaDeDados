@@ -1,0 +1,2 @@
+shape, loc, scale = lognorm.fit(x, floc=0)  # floc=0 força o deslocamento (loc) a ser 0
+shape, loc, scale

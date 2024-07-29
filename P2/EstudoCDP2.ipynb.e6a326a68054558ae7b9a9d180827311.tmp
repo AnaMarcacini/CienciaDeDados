@@ -1,0 +1,28 @@
+
+def Extrair(df: pd.DataFrame) -> None:
+    """
+    Exibe informações básicas de um DataFrame, incluindo seu shape,
+    colunas e uma amostra de valores de cada coluna.
+
+    Args:
+        df (pd.DataFrame): O DataFrame a ser analisado.
+    """
+    print('Utilize essas informações extraídas de um dataset para responder questões:')
+    print(f'Shape do dataset: {df.shape}')
+    print(f'Colunas do dataset: {df.columns.tolist()}')
+    print(f'Nome linhas do dataset: {df.index.tolist()}')
+
+
+    print('Amostra de valores de cada coluna do dataset:')
+
+    for column in df.columns:
+        unique_values = df[column].unique()
+        unique_count = len(unique_values)
+        if unique_count > 12:
+            # Seleciona o primeiro, o último e 10 valores aleatórios
+            sampled_values = np.random.choice(unique_values[1:-1], 10, replace=False)
+            sampled_values = np.concatenate(([unique_values[0]], sampled_values, [unique_values[-1]]))
+            print(f'Coluna {column}: {sampled_values} (total de {unique_count} valores únicos)')
+        else:
+            print(f'Coluna {column}: {unique_values}')
+    print('Para cada questão me retorne uma solucao em em python utilizando Pandas')

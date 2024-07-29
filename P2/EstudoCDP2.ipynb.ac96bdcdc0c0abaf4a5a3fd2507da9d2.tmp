@@ -1,0 +1,8 @@
+df = df_pos_games_Q2
+
+df['preference'] = (df[[x for x in df.columns if '_p' in x]] == 1).idxmax(axis=1)
+df['challenger'] = (df[[x for x in df.columns if '_d' in x]] == 1).idxmax(axis=1)
+
+df = pd.merge(df[['RA','preference','challenger']], df_pre_games_Q[['RA','Gênero']], how='inner', on='RA')
+
+df.head()

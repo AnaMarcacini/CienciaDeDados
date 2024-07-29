@@ -1,0 +1,2 @@
+concatenated_df = pd.concat([df1, df3], ignore_index=True,axis=1)
+concatenated_df

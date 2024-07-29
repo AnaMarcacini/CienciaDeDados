@@ -1,0 +1,8 @@
+fig, axes = plt.subplots(1,2,figsize=(14, 7))
+
+columns = ['a','b']
+for column, ax in zip(columns, axes):
+    sns.lineplot(x='a', y=column, data=df1, ax=ax)
+    ax.set_xlabel('a')
+    ax.set_ylabel(column)
+    ax.set_title(f'Gráfico de Linha - {column}')

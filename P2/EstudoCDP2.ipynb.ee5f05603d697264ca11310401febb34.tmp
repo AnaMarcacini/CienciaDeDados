@@ -1,0 +1,5 @@
+shapiro_before = stats.shapiro(df['Before'])
+shapiro_after = stats.shapiro(df['After'])
+
+print("Shapiro-Wild Before:", shapiro_before)
+print("Shapiro-Wild After:", shapiro_after)

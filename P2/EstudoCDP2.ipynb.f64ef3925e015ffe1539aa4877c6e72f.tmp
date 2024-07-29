@@ -1,0 +1,1 @@
+df['A'].sort_values(ascending=False)

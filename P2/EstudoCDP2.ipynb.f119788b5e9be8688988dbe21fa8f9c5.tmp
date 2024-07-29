@@ -1,0 +1,28 @@
+plt.figure(figsize=(10, 4))
+
+plt.subplot(1,2,1)
+bin_centers,b_mean = media_bins(16,df,'GrLivArea','SalePrice')
+
+sns.scatterplot(x=df['GrLivArea'],y=df['SalePrice'],alpha=0.6,label='Not New')
+sns.lineplot(x=bin_centers,y=b_mean,color='b',lw=2,alpha=0.8)
+
+bin_centers,b_mean = media_bins(16,df[df.SaleType == 'New'],'GrLivArea','SalePrice')
+
+sns.lineplot(x=bin_centers,y=b_mean,color='r',lw=2,alpha=0.8)
+sns.scatterplot(x=df[df.SaleType == 'New']['GrLivArea'],y=df[df.SaleType == 'New']['SalePrice'],color='r',alpha=0.8,label='New')
+
+plt.xlim([0,4000])
+plt.title('Sales Price $\\times$ GrLivArea',fontsize=14)
+plt.legend()
+
+plt.subplot(1,2,2)
+sns.kdeplot(x=df['SalePrice'],color='b',alpha=0.8,label='Not New',lw=2)
+sns.kdeplot(x=df[df.SaleType == 'New']['SalePrice'],color='r',alpha=0.8,label='New',lw=2)
+
+plt.title('Sales Price Distribution',fontsize=16)
+plt.legend()
+
+plt.suptitle('New and Not New Sale Prices',fontsize=14,weight='bold')
+
+plt.tight_layout()
+plt.show()

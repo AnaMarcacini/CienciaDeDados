@@ -1,0 +1,2 @@
+y = norm.ppf(x, loc=5000, scale=200)
+y

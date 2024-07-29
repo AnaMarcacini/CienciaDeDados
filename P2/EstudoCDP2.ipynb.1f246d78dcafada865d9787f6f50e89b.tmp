@@ -1,0 +1,2 @@
+probability_below_3000 = lognorm.cdf(3000, s=shape, loc=loc, scale=scale)
+probability_below_3000

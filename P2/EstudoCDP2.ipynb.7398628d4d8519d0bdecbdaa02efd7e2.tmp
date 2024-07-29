@@ -1,0 +1,15 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Selecionar apenas as colunas numéricas
+df_numeric = df.select_dtypes(include='number')
+
+# Calcular a matriz de correlação
+correlation_matrix = df_numeric.corr()
+
+# Criar o heatmap
+plt.figure(figsize=(12, 10))
+cmap=sns.color_palette("coolwarm", as_cmap=True)
+sns.heatmap(correlation_matrix, annot=True, linewidths=0.5, linecolor='black',cmap=cmap)
+plt.title('Heatmap das Correlações Numéricas')
+plt.show()

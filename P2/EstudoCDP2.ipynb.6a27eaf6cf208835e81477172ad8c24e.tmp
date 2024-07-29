@@ -1,0 +1,14 @@
+from scipy.stats import ttest_rel
+
+# Dados de exemplo
+a = [1, 2, 3, 4, 5]
+b = [2, 3, 4, 5, 6]
+
+# Teste bilateral
+stat, p = ttest_rel(a, b, alternative='two-sided')
+
+# Teste unilateral à direita
+stat, p = ttest_rel(a, b, alternative='greater')
+
+# Teste unilateral à esquerda
+stat, p = ttest_rel(a, b, alternative='less')

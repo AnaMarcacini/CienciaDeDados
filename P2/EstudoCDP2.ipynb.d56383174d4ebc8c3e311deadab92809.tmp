@@ -1,0 +1,7 @@
+# Gráfico de barras com matplotlib
+plt.figure(figsize=(14, 7))
+sns.barplot(data=df,x='year',y='barrels',estimator='max')
+plt.title('Total Beer Production by Year (Matplotlib)')
+plt.xlabel('Year')
+plt.ylabel('Total Barrels')
+plt.show()

@@ -1,0 +1,2 @@
+probabilidade = weibull_min.ppf(0.1, c=k_shape, scale=lambda_scale)
+probabilidade

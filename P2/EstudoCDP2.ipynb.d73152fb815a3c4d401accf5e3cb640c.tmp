@@ -1,0 +1,1 @@
+df['After_3_percent_higher'] = df['After'] * 1.03

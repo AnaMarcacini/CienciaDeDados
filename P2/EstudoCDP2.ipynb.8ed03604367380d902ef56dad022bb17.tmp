@@ -1,0 +1,31 @@
+# Plotando os histogramas
+plt.figure(figsize=(14, 6))
+
+plt.subplot(1, 2, 1)
+sns.kdeplot(df['Before'])
+plt.title('Distribuição de Before')
+plt.xlabel('Before')
+plt.ylabel('Frequência')
+
+plt.subplot(1, 2, 2)
+sns.kdeplot(df['After'], alpha=0.7,color='r')
+plt.title('Distribuição de After')
+plt.xlabel('After')
+plt.ylabel('Frequência')
+
+plt.tight_layout()
+plt.show()
+
+# Plotando os QQ plots
+plt.figure(figsize=(14, 6))
+
+plt.subplot(1, 2, 1)
+stats.probplot(df['Before'], dist="norm", plot=plt)
+plt.title('QQ Plot de Before')
+
+plt.subplot(1, 2, 2)
+stats.probplot(df['After'], dist="norm", plot=plt)
+plt.title('QQ Plot de After')
+
+plt.tight_layout()
+plt.show()

@@ -1,0 +1,4 @@
+fig, (ax1,ax2) = plt.subplots(1,2,figsize=(15,7))
+
+sns.lineplot(x='A', y='B', data=df, ax=ax1)
+sns.lineplot(x='B', y='C', data=df, ax=ax2)

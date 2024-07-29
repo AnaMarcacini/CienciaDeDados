@@ -1,0 +1,3 @@
+from scipy.stats import shapiro
+
+stat, p = shapiro(a)

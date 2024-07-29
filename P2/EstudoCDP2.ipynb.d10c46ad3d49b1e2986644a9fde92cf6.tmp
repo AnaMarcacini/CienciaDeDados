@@ -1,0 +1,12 @@
+def media_bins(num_bins,df,column_bin,column_target):
+# create media bins values
+# Created by: Rogerio de Oliveira
+# Date: 2023-12-01
+#
+# issues: how put other than means?
+
+  bin_edges = np.linspace(df[column_bin].min(), df[column_bin].max(), num_bins + 1)
+  b_mean = df.groupby(pd.cut(df[column_bin], bin_edges))[column_target].mean()
+  bin_centers = (bin_edges[:-1] + bin_edges[1:]) / 2
+
+  return bin_centers,b_mean

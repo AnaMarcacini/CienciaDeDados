@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Listar todas as colunas do DataFrame
+columns = df.columns
+
+# Plotar histogramas para cada atributo
+plt.figure(figsize=(20, 20))
+
+for i, col in enumerate(columns):
+    plt.subplot(5, 3, i+1)
+    sns.histplot(df[col], kde=True)
+    plt.title(f'Distribuição de {col}')
+    plt.xlabel('')
+    plt.ylabel('')
+
+plt.tight_layout()
+plt.show()

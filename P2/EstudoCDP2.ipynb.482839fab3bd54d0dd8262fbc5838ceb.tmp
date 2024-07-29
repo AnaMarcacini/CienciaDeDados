@@ -1,0 +1,14 @@
+from scipy.stats import mannwhitneyu
+
+# Dados de exemplo
+a = [1, 2, 3, 4, 5]
+b = [2, 3, 4, 5, 6]
+
+# Teste bilateral
+stat, p = mannwhitneyu(a, b, alternative='two-sided')
+
+# Teste unilateral à direita
+stat, p = mannwhitneyu(a, b, alternative='greater')
+
+# Teste unilateral à esquerda
+stat, p = mannwhitneyu(a, b, alternative='less')

@@ -1,0 +1,2 @@
+t_test = stats.ttest_rel(df['Before'], df['After'])
+t_test

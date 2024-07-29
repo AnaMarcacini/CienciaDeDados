@@ -1,0 +1,2 @@
+distributions = pd.DataFrame()
+distributions['pearson'] = pearson_corr['SalePrice']

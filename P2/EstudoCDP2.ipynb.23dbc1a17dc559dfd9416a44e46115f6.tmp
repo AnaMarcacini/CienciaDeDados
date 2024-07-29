@@ -1,0 +1,12 @@
+fig, ax = plt.subplots(2,2,figsize=(9,7))
+
+sns.histplot(x='pontuacao',data=df,hue='Gênero',kde=True,ax=ax[0,0],alpha=0.5)
+sns.boxplot(x='Gênero', y='pontuacao', data=df, color='#99c2a2',ax=ax[0,1])
+
+sns.histplot(x='pontuacao',data=df,hue='device',kde=True,ax=ax[1,0],alpha=0.5)
+sns.boxplot(x='device', y='pontuacao', data=df, color='#99c2a2',ax=ax[1,1])
+
+plt.suptitle('Pontuações por Gênero e Dispositivo',fontsize=14,weight='bold')
+
+plt.tight_layout()
+plt.show()

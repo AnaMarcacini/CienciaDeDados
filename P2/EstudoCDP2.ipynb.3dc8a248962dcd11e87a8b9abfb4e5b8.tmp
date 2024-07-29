@@ -1,0 +1,1 @@
+df_2019['state'].unique()

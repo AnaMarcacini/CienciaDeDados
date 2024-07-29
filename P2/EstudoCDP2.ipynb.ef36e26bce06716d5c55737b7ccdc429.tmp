@@ -1,0 +1,11 @@
+df_s0_stim = df[(df.subject == 's0') & (df['region'] == 'parietal') & (df['event'] == 'stim')].sort_values('timepoint')
+df_s0_cue = df[(df.subject == 's0') & (df['region'] == 'parietal') & (df['event'] == 'cue')].sort_values('timepoint')
+
+df_s1_stim = df[(df.subject == 's1') & (df['region'] == 'parietal') & (df['event'] == 'stim')].sort_values('timepoint')
+df_s1_cue = df[(df.subject == 's1') & (df['region'] == 'parietal') & (df['event'] == 'cue')].sort_values('timepoint')
+
+df_s2_stim = df[(df.subject == 's2') & (df['region'] == 'parietal') & (df['event'] == 'stim')].sort_values('timepoint')
+df_s2_cue = df[(df.subject == 's2') & (df['region'] == 'parietal') & (df['event'] == 'cue')].sort_values('timepoint')
+
+df_s3_stim = df[(df.subject == 's3') & (df['region'] == 'parietal') & (df['event'] == 'stim')].sort_values('timepoint')
+df_s3_cue = df[(df.subject == 's3') & (df['region'] == 'parietal') & (df['event'] == 'cue')].sort_values('timepoint')

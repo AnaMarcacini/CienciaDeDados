@@ -1,0 +1,1 @@
+display(Latex(gera_latex_table(distributions, "Correlation Table")))

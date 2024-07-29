@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Criar um DataFrame com as variáveis de interesse
+variables_df = df[['clarity', 'density', 'purity', 'silica']]
+
+# Criar um gráfico de boxplot para todas as variáveis
+plt.figure(figsize=(14, 7))
+sns.boxplot(data=variables_df, palette="Set3")
+plt.title('Boxplot for Clarity, Density, Purity, and Silica')
+plt.xlabel('Variables')
+plt.ylabel('Values')
+plt.grid(True)
+
+# Mostrar o gráfico
+plt.show()

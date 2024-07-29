@@ -1,0 +1,9 @@
+plt.figure(figsize=(14, 10))
+sns.boxplot(x='arr_delay', y='name', data=flights, palette="Set3")
+plt.title('Boxplot of Flight Arrival Delays by Airline')
+plt.xlabel('Arrival Delay (minutes)')
+plt.ylabel('Airline')
+plt.grid(True)
+
+# Mostrar o gráfico
+plt.show()

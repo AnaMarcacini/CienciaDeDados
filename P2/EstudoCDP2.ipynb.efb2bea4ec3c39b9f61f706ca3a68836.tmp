@@ -1,0 +1,5 @@
+plt.figure(figsize=(10,5))
+sns.barplot(data=df,x='rad',y='medv')
+
+plt.tight_layout()
+plt.show()

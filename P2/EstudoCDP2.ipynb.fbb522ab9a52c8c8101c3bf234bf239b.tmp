@@ -1,0 +1,6 @@
+plt.figure(figsize=(10,5))
+
+sns.ecdfplot(df['medv'])
+plt.axvline(22)
+plt.tight_layout()
+plt.show()

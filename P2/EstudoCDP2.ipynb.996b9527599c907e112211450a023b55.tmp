@@ -1,0 +1,6 @@
+plt.figure()
+plt.bar(df['Ano'], df['B'] >= 0)
+plt.xlabel('A')
+plt.ylabel('B')
+plt.title('Gráfico de Barra')
+plt.show()

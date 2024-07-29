@@ -1,0 +1,5 @@
+pearson_corr = df_numeric.corr(method='pearson')
+
+spearman_corr = df_numeric.corr(method='spearman')
+
+kendall_corr = df_numeric.corr(method='kendall')

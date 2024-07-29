@@ -1,0 +1,27 @@
+# Definir o tamanho da figura
+plt.figure(figsize=(15, 6))
+
+# Plotar as linhas com rótulos
+sns.lineplot(x='Date', y='GOL', data=df, label='GOL')
+sns.lineplot(x='Date', y='Latam', data=df, label='Latam')
+sns.lineplot(x='Date', y='Azul', data=df, label='Azul')
+sns.lineplot(x='Date', y='American Airlines', data=df, label='American Airlines')
+
+# Adicionar rótulos e título
+plt.xlabel('Data')
+plt.ylabel('Valor')
+plt.title('Linha de Tendência')
+
+x_point = df[['Date']].iloc[12]
+y_point = df['GOL'].max()   # Valor específico
+
+plt.scatter(x_point, y_point, color='red')
+
+plt.annotate('Ponto Máximo da Bolsa', xy=(x_point, y_point), xytext=(x_point, y_point),
+             arrowprops=dict(facecolor='black', shrink=0.05),
+             fontsize=12, color='blue')
+# Adicionar a legenda
+plt.legend()
+
+# Mostrar o gráfico
+plt.show()

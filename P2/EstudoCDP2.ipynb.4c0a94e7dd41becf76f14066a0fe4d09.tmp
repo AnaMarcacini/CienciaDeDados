@@ -1,0 +1,3 @@
+plt.figure(figsize=(12,5))
+
+sns.heatmap(correlation_matrix)

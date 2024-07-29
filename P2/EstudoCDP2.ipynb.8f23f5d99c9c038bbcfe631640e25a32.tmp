@@ -1,0 +1,21 @@
+import pandas as pd
+from IPython.display import display, Latex, HTML
+
+def gera_latex_table(df, titulo):
+# create a latex table from a dataframe
+# Created by: Rogerio de Oliveira
+# Date: 2023-12-05
+#
+# issues: df.style.to_latex changes, replace changes
+
+
+  latex_table = df.style.to_latex(hrules=True)
+
+  latex_table = latex_table.replace('tabular','array')
+  latex_table = latex_table.replace('toprule','hline')
+  latex_table = latex_table.replace('midrule','hline')
+  latex_table = latex_table.replace('bottomrule','hline')
+
+  latex_table = '\\textbf{' + titulo + '} \\\\' + latex_table
+
+  return latex_table

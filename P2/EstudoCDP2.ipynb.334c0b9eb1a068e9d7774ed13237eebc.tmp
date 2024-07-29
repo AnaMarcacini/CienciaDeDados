@@ -1,0 +1,3 @@
+from scipy.stats import wilcoxon
+
+stat, p = wilcoxon(a, b, alternative='two-sided')

@@ -1,0 +1,6 @@
+plt.figure()
+plt.boxplot(df[['A','B','C']],labels=['A','B','C'])
+plt.xlabel('Colunas')
+plt.ylabel('Valores')
+plt.title('Boxplot')
+plt.show

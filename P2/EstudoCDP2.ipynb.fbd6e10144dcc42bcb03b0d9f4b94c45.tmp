@@ -1,0 +1,5 @@
+plt.figure()
+sns.histplot(df1['a'], bins=6)
+plt.xlabel('a')
+plt.ylabel('Frequência')
+plt.title('Histograma')

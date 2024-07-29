@@ -1,0 +1,1 @@
+df[df['Gênero'] == 'Feminino']['pontuacao'].mean(), df[df['Gênero'] == 'Masculino']['pontuacao'].mean()

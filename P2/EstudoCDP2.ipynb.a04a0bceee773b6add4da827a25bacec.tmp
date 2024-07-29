@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Normalizar as variáveis
+variables = ['clarity', 'density', 'purity', 'silica', 'price+']
+normalized_df = df[variables].apply(lambda x: (x - x.mean()) / x.std())
+
+# Criar um gráfico de boxplot para todas as variáveis
+plt.figure(figsize=(14, 7))
+sns.boxplot(data=normalized_df, palette="Set3")
+plt.title('Normalized Boxplot for Clarity, Density, Purity, Silica, and Price+')
+plt.xlabel('Variables')
+plt.ylabel('Normalized Values')
+plt.grid(True)
+
+# Mostrar o gráfico
+plt.show()

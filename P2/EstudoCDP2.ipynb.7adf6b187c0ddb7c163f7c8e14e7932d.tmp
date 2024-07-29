@@ -1,0 +1,7 @@
+plt.figure(figsize=(16, 10))
+sns.boxplot(x='rad', y='medv', data=df)
+plt.title('Boxplot dos Preços das Casas por Índice de Acessibilidade (RAD)')
+plt.xlabel('Índice de Acessibilidade (RAD)')
+plt.ylabel('Preço das Casas (MEDV)')
+plt.grid(True)
+plt.show()

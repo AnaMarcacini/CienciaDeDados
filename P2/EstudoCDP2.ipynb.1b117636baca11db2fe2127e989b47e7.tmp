@@ -1,0 +1,5 @@
+from scipy.stats import chi2_contingency
+
+table = pd.crosstab(variable1, variable2)
+
+stat, p, dof, expected = chi2_contingency(table)

@@ -1,0 +1,2 @@
+probabilidade = expon.cdf(2, scale=1/mean_time_in_system)
+probabilidade

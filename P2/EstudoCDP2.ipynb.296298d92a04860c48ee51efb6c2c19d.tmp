@@ -1,0 +1,12 @@
+# Parâmetros
+shape = 2  # parâmetro de forma
+loc = 0  # deslocamento
+scale = 2  # parâmetro de escala
+
+# CDF
+cdf_value = gamma.cdf(x=5, a=shape, loc=loc, scale=scale)
+print("Gamma CDF:", cdf_value)
+
+# PPF
+ppf_value = gamma.ppf(q=0.95, a=shape, loc=loc, scale=scale)
+print("Gamma PPF:", ppf_value)

@@ -1,0 +1,1 @@
+df_ano['A_squared_normalized'] = (df_ano['A_square'] - df_ano['A_square'].mean()) / df_ano['A_square'].std()

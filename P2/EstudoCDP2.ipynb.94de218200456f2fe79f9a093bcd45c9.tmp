@@ -1,0 +1,19 @@
+# Configurar o gerador de números aleatórios para reprodutibilidade
+np.random.seed(42)
+
+# Gerar datas fictícias
+dates = pd.date_range(start='2023-01-01', periods=30, freq='D')
+
+# Gerar dados fictícios para as companhias aéreas
+data = {
+    'Date': dates,
+    'GOL': np.random.uniform(low=20, high=50, size=len(dates)),
+    'Latam': np.random.uniform(low=30, high=60, size=len(dates)),
+    'Azul': np.random.uniform(low=25, high=55, size=len(dates)),
+    'American Airlines': np.random.uniform(low=35, high=65, size=len(dates))
+}
+
+# Criar o DataFrame
+df = pd.DataFrame(data)
+
+df.head()

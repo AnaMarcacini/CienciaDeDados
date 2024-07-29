@@ -1,0 +1,3 @@
+# Calcular a probabilidade acumulada para dis <= 5
+probability = (df['medv'] <= 22).mean()
+probability

@@ -1,0 +1,1 @@
+df_ano['A_square'] = df_ano['A'].apply(lambda x: x ** 2)

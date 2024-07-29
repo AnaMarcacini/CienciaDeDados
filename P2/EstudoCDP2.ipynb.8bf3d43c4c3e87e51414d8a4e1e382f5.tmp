@@ -1,0 +1,11 @@
+# Parâmetros
+a = 2  # parâmetro alfa
+b = 5  # parâmetro beta
+
+# CDF
+cdf_value = beta.cdf(x=0.5, a=a, b=b)
+print("CDF:", cdf_value)
+
+# PPF
+ppf_value = beta.ppf(q=0.95, a=a, b=b)
+print("PPF:", ppf_value)

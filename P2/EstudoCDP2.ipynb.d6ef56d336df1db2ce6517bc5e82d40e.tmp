@@ -1,0 +1,25 @@
+plt.figure(figsize=(12, 6))
+
+# Plotar a linha
+sns.lineplot(data=df, x='Ano', y='A')
+
+# Adicionar uma linha vertical no ano 2020
+plt.axvline(x=2020, color='red', linestyle='--')
+
+# Adicionar uma linha horizontal na média de 'A' para o ano 2020
+mean_2020 = df[df['Ano'] == 2020]['A'].mean()
+plt.axhline(y=mean_2020, color='green', linestyle='--')
+
+# Anotar a média de 'A' para o ano 2020
+plt.annotate(f'{mean_2020:.2f}',
+             xy=(2020, mean_2020),
+             xytext=(2020 + 1, mean_2020 + 0.5),  # Ajustar a posição do texto
+             arrowprops=dict(facecolor='black', shrink=0.05),
+             fontsize=12, color='blue')
+
+# Mostrar o gráfico
+plt.title('Linha de Tendência com Anotação')
+plt.xlabel('Ano')
+plt.ylabel('A')
+plt.tight_layout()
+plt.show()

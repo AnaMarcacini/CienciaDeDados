@@ -1,0 +1,7 @@
+# CDF
+cdf_value = norm.cdf(x=1, loc=loc, scale=scale)
+print("CDF:", cdf_value)
+
+# PPF
+ppf_value = norm.ppf(q=0.95, loc=loc, scale=scale)
+print("PPF:", ppf_value)

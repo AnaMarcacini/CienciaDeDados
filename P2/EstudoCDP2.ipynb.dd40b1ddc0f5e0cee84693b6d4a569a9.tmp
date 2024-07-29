@@ -1,0 +1,7 @@
+# Calcular a variância dos sinais para o evento 'stim'
+variance_stim = df_s0[df_s0['event'] == 'stim']['signal'].var()
+
+# Calcular a variância dos sinais para o evento 'cue'
+variance_cue = df_s0[df_s0['event'] == 'cue']['signal'].var()
+
+variance_stim, variance_cue
