@@ -1,4 +1,0 @@
-if shapiro_before[1] < 0.05:
-    print("Dados não têm distribuição normal")
-else:
-    print("Dados têm distribuição normal")

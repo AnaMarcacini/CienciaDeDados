@@ -1,3 +1,0 @@
-from statsmodels.stats.weightstats import ztest
-
-stat, p = ztest(a, b, alternative='two-sided')

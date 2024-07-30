@@ -1,1 +1,0 @@
-df_ano['A_square_otherway'] = df_ano['A']**2

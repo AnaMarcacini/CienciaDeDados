@@ -1,6 +1,0 @@
-plt.figure(figsize=(10,6))
-sns.barplot(x='year', y='barrels', hue='state', data=df_last_years, estimator='sum')
-plt.title('Produção de Barris por Ano e Estado')
-plt.xlabel('Ano')
-plt.ylabel('Produção de Barris')
-plt.show()

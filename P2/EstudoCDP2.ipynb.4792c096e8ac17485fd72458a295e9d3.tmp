@@ -1,4 +1,0 @@
-plt.figure(figsize=(10,5))
-
-sns.ecdfplot(df['dis'])
-plt.axvline(5)

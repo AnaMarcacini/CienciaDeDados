@@ -1,2 +1,0 @@
-latex_results_scores = gera_df_stats_latex(results,'Game Analysis')
-display(Latex(latex_results_scores))

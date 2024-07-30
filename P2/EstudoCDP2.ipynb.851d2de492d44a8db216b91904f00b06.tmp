@@ -1,2 +1,0 @@
-z = np.polyfit(df['Index'], df['GOL'], 1)  # regressão linear
-p = np.poly1d(z)

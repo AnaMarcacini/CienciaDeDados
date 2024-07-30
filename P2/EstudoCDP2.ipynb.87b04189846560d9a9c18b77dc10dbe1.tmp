@@ -1,9 +1,0 @@
-df_2019 = df[(df['year'] == 2019) & (df['state'] != 'total')]
-
-# Agrupar os dados por estado e somar a produção de barris
-production_per_state_2019 = df_2019.groupby('state')['barrels'].sum().reset_index()
-
-# Ordenar os estados pela produção total e selecionar os 3 maiores
-top_3_states_2019 = production_per_state_2019.sort_values(by='barrels', ascending=False).head(3)
-
-top_3_states_2019

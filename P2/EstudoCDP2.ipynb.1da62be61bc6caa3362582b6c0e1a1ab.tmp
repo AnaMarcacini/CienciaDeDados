@@ -1,3 +1,0 @@
-df4['a'].fillna(df4['a'].mean(), inplace=True)
-
-df4['c'].fillna(df4['c'].mean(), inplace=True)

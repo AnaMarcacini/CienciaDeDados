@@ -1,1 +1,0 @@
-df_aux = df.groupby('year').sum()['barrels'].sort_values(ascending=False).reset_index()

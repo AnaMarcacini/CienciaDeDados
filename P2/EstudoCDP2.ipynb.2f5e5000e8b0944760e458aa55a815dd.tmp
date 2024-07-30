@@ -1,2 +1,0 @@
-minimum_renda = lognorm.ppf(1 - 0.9,s=shape,loc=loc,scale=scale)
-minimum_renda

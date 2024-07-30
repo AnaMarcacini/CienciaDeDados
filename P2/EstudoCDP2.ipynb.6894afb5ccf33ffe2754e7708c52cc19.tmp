@@ -1,6 +1,0 @@
-plt.figure()
-plt.hist(df1['a'],bins=6)
-plt.xlabel('a')
-plt.ylabel('Frequência')
-plt.title('Histograma')
-plt.show()

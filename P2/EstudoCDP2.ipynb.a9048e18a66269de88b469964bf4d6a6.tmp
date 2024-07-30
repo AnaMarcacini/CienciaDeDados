@@ -1,5 +1,0 @@
-df_s0_stim = df[(df.subject == 's0') & (df['region'] == 'parietal') & (df['event'] == 'stim')].sort_values('timepoint')
-df_s0_cue = df[(df.subject == 's0') & (df['region'] == 'parietal') & (df['event'] == 'cue')].sort_values('timepoint')
-
-df_s1_stim = df[(df.subject == 's1') & (df['region'] == 'parietal') & (df['event'] == 'stim')].sort_values('timepoint')
-df_s1_cue = df[(df.subject == 's1') & (df['region'] == 'parietal') & (df['event'] == 'cue')].sort_values('timepoint')

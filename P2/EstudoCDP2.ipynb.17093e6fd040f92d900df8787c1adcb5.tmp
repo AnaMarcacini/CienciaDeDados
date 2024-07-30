@@ -1,2 +1,0 @@
-df = pd.read_csv('https://github.com/Rogerio-mack/IMT_CD_2024/raw/main/data/glasses.csv')
-df.head()

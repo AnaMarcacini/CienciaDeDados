@@ -1,7 +1,0 @@
-attribute = correlation_matrix['SalePrice'].sort_values(ascending=False).index[1]
-
-# Coeficientes de correlação
-corr_before = correlation_matrix.loc[attribute, 'SalePrice']
-corr_after = correlation_matrix_no_outliers.loc[attribute, 'SalePrice']
-
-corr_before, corr_after

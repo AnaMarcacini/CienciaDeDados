@@ -1,2 +1,0 @@
-y = norm.cdf(normal_samples, loc=5000, scale=200)
-y

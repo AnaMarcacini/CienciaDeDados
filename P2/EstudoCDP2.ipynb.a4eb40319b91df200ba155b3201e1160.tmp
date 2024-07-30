@@ -1,5 +1,0 @@
-coefs = ['pearson', 'spearman' , 'kendall']
-
-for coef in coefs:
-  corr = df.select_dtypes(include='number').corr(method=coef)[['SalePrice']]
-  display(Latex(gera_latex_table(corr,f'SalePrice Correlations - {coef}')))

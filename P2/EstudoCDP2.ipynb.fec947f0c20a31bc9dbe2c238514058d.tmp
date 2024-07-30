@@ -1,7 +1,0 @@
-df_games = pd.read_csv(path + 'df_games.csv')
-df_post_games_Q = pd.read_csv(path + 'df_post_games_Q.csv')
-df_pre_games_Q = pd.read_csv(path + 'df_pre_games_Q.csv')
-
-display(df_games.head())
-display(df_post_games_Q.head())
-display(df_pre_games_Q.head())

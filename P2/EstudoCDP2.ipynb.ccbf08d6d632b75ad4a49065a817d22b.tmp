@@ -1,3 +1,0 @@
-fig, axes = plt.subplots(1,2,figsize=(10,6))
-sns.barplot(x='state', y='barrels', data=df[df['year'] == 2019].sort_values(by='barrels', ascending=False).head(3), ax=axes[0])
-axes[1].bar(df[df['year'] == 2019].sort_values(by='barrels', ascending=False).head(3)['state'], df[df['year'] == 2019].sort_values(by='barrels', ascending=False).head(3)['barrels'])

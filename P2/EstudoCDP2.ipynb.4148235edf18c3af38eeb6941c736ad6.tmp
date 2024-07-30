@@ -1,7 +1,0 @@
-plt.figure(figsize=(10, 6))
-plt.plot(prob, y, marker='.', linestyle='none')
-plt.xlabel('Probability')
-plt.ylabel('Quantile')
-plt.title('Log-normal PPF')
-plt.grid(True)
-plt.show()

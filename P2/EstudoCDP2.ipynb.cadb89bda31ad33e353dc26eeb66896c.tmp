@@ -1,2 +1,0 @@
-df = pd.merge(df_games, df_pre_games_Q[['RA','Gênero']],how='inner', on='RA')
-df

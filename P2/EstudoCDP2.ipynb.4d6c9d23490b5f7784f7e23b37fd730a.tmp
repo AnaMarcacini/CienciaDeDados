@@ -1,5 +1,0 @@
-fig, ax = plt.subplots(2,2,figsize=(15,7))
-ax[0,0].plot(df['A'], df['B'])
-ax[0,1].plot(df['B'], df['C'])
-ax[1,0].plot(df['A'], df['B'])
-ax[1,1].plot(df['B'], df['C'])

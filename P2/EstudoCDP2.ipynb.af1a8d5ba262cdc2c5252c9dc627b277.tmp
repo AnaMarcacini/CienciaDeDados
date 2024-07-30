@@ -1,7 +1,0 @@
-import scipy.stats as stats
-
-plt.figure(figsize=(10,6))
-stats.probplot(df['A'], dist="norm", plot=plt)
-plt.title("QQplot - A")
-plt.tight_layout()
-plt.show()

@@ -1,8 +1,0 @@
-np.random.seed(1)
-lambda_scale = 5000  # escala, vida média em horas
-k_shape = 1.5  # forma, <1 pouquissímas falhas, =1 taxa constante (exponencial), >1.5 taxa aumenta, modelando por exemplo desgaste
-
-x = weibull_min.rvs(c=k_shape, scale=lambda_scale, size=60)
-sns.histplot(x, kde=True)
-plt.show()
-x[0:10]

@@ -1,5 +1,0 @@
-fig, axes = plt.subplots(1, 2, figsize=(12, 4))
-
-sns.barplot(x='year', y='barrels', data=df, ax=axes[0], estimator ='sum')
-
-axes[1].bar(df_aux['year'], df_aux['barrels'])

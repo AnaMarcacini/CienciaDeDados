@@ -1,5 +1,0 @@
-plt.figure(figsize=(14,7))
-sns.barplot(data=df_2019,x='state',y='barrels',estimator='sum')
-
-# plt.tight_layout()
-plt.show()

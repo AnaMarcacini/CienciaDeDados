@@ -1,3 +1,0 @@
-# Calcular a probabilidade acumulada para dis <= 5
-probability = (df['dis'] <= 5).mean()
-probability

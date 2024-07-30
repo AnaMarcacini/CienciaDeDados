@@ -1,3 +1,0 @@
-np.random.seed(1)
-normal_samples = norm.rvs(loc=5000, scale=200, size=sample_size)
-normal_samples[:10]

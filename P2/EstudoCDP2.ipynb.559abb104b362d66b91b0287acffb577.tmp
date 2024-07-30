@@ -1,2 +1,0 @@
-for column in df.columns:
-  print(df[column].unique())

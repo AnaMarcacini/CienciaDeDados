@@ -1,2 +1,0 @@
-probabilidade = expon.ppf(0.9, scale=1/mean_time_in_system)
-probabilidade

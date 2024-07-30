@@ -1,3 +1,0 @@
-df['Before'] = df['Before Hours'] + df['Before Min'] / 60
-df['After'] = df['After Hours'] + df['After Min'] / 60
-df.head()

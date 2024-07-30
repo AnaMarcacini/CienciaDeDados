@@ -1,7 +1,0 @@
-# Filtrar os dados para o evento 'stim'
-df_stim = df[df['event'] == 'stim']
-
-# Calcular a média dos sinais para cada sujeito
-mean_signal_per_subject = df_stim.groupby('subject')['signal'].mean().sort_values(ascending=False)
-
-mean_signal_per_subject

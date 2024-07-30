@@ -1,2 +1,0 @@
-plt.figure()
-teste = sns.ecdfplot(x)

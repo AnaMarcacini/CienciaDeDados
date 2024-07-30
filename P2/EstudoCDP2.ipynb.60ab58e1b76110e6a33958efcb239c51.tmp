@@ -1,5 +1,0 @@
-plt.plot(df1['a'], df1['b'])
-plt.xlabel('a')
-plt.ylabel('b')
-plt.title('Gráfico de Linha')
-plt.show()

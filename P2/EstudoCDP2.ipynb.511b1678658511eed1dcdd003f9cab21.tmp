@@ -1,3 +1,0 @@
-from scipy.stats import mannwhitneyu
-
-stat, p = mannwhitneyu(a, b, alternative='two-sided')

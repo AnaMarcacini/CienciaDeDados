@@ -1,9 +1,0 @@
-%matplotlib inline
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from scipy.stats import lognorm, norm, expon, weibull_min, uniform, beta, binom, pareto, cauchy, gamma
-import scipy.stats as stats # isso aq importa o qqplot (stats.probplot(df[var], dist="norm", plot=ax))
-from scipy.stats import ttest_ind
-from scipy.stats import ttest_rel

@@ -1,1 +1,0 @@
-sns.histplot(normal_samples,kde=True)

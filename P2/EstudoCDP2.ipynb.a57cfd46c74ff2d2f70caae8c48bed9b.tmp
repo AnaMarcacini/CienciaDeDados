@@ -1,3 +1,0 @@
-prob = np.linspace(0.01, 0.99, 100)
-y = lognorm.ppf(prob, s=shape, scale=scale)
-y

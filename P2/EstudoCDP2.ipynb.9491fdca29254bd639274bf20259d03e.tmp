@@ -1,6 +1,0 @@
-fig, axes = plt.subplots(1,2,figsize=(14, 7))
-
-columns = ['a','b']
-for column, ax in zip(columns, axes):
-    sns.histplot(df1[column],bins = 6, ax=ax)
-    ax.set_xlabel(column)

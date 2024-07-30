@@ -1,7 +1,0 @@
-plt.figure(figsize=(10,6))
-sns.lineplot(x=x, y=y)
-plt.axvline(x=0.6, color='r', linestyle='--')
-
-plt.xlabel('Probabilidade')
-plt.ylabel('Valores')
-plt.title('Distribuição Normal')

@@ -1,2 +1,0 @@
-df_2019 = df[(df['year']==2019) & ~(df['state'] == 'total')]
-df_2019.head()

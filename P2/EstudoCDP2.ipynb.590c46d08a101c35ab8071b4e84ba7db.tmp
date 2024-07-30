@@ -1,2 +1,0 @@
-df = sns.load_dataset('fmri')
-df.head()

@@ -1,4 +1,0 @@
-sns.lineplot(x='a', y='b', data=df1)
-plt.xlabel('a')
-plt.ylabel('b')
-plt.title('Gráfico de Linha')

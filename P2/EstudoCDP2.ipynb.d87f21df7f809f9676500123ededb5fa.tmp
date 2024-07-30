@@ -1,7 +1,0 @@
-np.random.seed(1)
-mean_time_in_system = 1 / (4 - 3)
-
-x = expon.rvs(scale=mean_time_in_system, size=60)
-sns.histplot(x, kde=True)
-plt.show()
-x[0:10]

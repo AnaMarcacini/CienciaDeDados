@@ -1,5 +1,0 @@
-fig, axes = plt.subplots(1,2,figsize=(14, 7))
-
-columns = ['A','B']
-for column, ax in zip(columns, axes.flatten()):
-    sns.boxplot(x=column, data=df, ax=ax)

@@ -1,3 +1,0 @@
-df4['a'].replace('', np.nan, inplace=True)
-
-df4['c'].replace('', np.nan, inplace=True)

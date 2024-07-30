@@ -1,1 +1,0 @@
-df_merged = pd.merge(df_ano, df_companhias[['Ano','Companhias']], on='Ano', how='inner')

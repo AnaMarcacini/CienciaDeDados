@@ -1,2 +1,0 @@
-df_numeric.corr(method='pearson')
-df_no_outliers = df_numeric[~(df_numeric).isin(outliers)]

@@ -1,2 +1,0 @@
-probability_above_8000 = 1 - lognorm.cdf(8000, s=shape, loc=loc, scale=scale)
-probability_above_8000

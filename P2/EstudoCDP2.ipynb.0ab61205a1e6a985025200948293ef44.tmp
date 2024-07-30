@@ -1,2 +1,0 @@
-estoque_reposicao = np.ceil(0.90 * num_falhas_esperadas)
-estoque_reposicao

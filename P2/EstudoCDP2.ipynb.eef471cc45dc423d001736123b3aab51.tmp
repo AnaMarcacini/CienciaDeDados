@@ -1,2 +1,0 @@
-df_s0 = df[(df.subject == 's0') & (df.region == 'parietal') & (df.event == 'stim')]
-df_s0 = df_s0.sort_values('timepoint')

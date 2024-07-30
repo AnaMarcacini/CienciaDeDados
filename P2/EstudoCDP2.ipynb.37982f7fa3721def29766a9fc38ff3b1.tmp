@@ -1,7 +1,0 @@
-fig, ax = plt.subplots(1,2, figsize=(15,5))
-
-sns.scatterplot(x=df_numeric['GrLivArea'],y=df_numeric['SalePrice'],hue=df['SaleType'],ax = ax[0])
-
-sns.scatterplot(x=df_numeric['GrLivArea'],y=df_numeric['SalePrice'],hue=df['MSZoning'],ax = ax[1])
-
-plt.show()

@@ -1,3 +1,0 @@
-distributions['kendall'] = kendall_corr['SalePrice']
-distributions['spearman'] = spearman_corr['SalePrice']
-distributions.head()

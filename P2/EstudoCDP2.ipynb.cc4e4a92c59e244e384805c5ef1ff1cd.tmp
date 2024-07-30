@@ -1,2 +1,0 @@
-df_pos_games_Q2 = pd.read_csv(path + 'df_pos_games_Q2.csv')
-df_pos_games_Q2.head()

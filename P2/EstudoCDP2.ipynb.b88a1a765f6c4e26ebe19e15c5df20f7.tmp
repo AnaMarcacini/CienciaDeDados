@@ -1,5 +1,0 @@
-plt.figure()
-sns.boxplot(data=df[['A','B','C']])
-plt.xlabel('Colunas')
-plt.ylabel('Valores')
-plt.title('Boxplot')

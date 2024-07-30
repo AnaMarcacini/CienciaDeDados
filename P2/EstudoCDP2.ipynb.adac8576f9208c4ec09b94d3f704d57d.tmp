@@ -1,4 +1,0 @@
-plt.figure(figsize=(10, 8))
-sns.heatmap(correlation_matrix, annot=True, cmap='RdYlBu')
-plt.title('Matriz de Correlação')
-plt.show()

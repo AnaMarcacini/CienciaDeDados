@@ -1,4 +1,0 @@
-if t_test[1] < 0.05:
-    print("Rejeitamos a hipótese nula (depois >= antes) - as médias são estatisticamente menores após o treinamento.")
-else:
-    print("Não rejeitamos a hipótese nula (depois < antes)- não há evidências suficientes para afirmar que as médias são estatisticamente menores após o treinamento.")

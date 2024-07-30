@@ -1,3 +1,0 @@
-df = pd.read_csv('https://github.com/Rogerio-mack/IMT_Ciencia_de_Dados/raw/main/data/BostonHousing.csv')
-df.drop(columns='b',inplace=True)
-df.head()

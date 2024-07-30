@@ -1,8 +1,0 @@
-# Agrupar o DataFrame pelo índice `rad` e calcular a média dos preços das casas (`medv`)
-mean_prices_by_rad = df.groupby('rad')['medv'].mean().reset_index()
-
-# Identificar o índice `rad` que apresenta a maior média de preços das casas
-max_mean_price_rad = mean_prices_by_rad.loc[mean_prices_by_rad['medv'].idxmax()]
-
-# Exibir o resultado
-max_mean_price_rad

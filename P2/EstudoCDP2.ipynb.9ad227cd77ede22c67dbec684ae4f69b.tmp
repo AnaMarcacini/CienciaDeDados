@@ -1,6 +1,0 @@
-t_test_3_percent = stats.ttest_rel(df['After_3_percent_higher'], df['Before'])
-print(t_test_3_percent)
-if t_test_3_percent[1] < 0.05:
-    print("Rejeitamos a hipótese nula (depois >= antes) - as médias são estatisticamente menores após o treinamento (amostras independentes).")
-else:
-    print("Não rejeitamos a hipótese nula (depois < antes) - não há evidências suficientes para afirmar que as médias são estatisticamente menores após o treinamento (amostras independentes).")

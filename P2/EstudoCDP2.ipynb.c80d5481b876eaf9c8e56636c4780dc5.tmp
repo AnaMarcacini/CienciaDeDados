@@ -1,1 +1,0 @@
-years = df['year'].unique()[-3:]

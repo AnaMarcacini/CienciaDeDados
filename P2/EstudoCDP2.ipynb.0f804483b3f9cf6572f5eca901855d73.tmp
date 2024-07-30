@@ -1,2 +1,0 @@
-probabilidade = weibull_min.cdf(2000, c=k_shape, scale=lambda_scale)
-probabilidade

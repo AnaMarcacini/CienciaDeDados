@@ -1,3 +1,0 @@
-from scipy.stats import ttest_1samp
-
-stat, p = ttest_1samp(a, valor, alternative='two-sided')

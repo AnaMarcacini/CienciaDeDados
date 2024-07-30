@@ -1,2 +1,0 @@
-columns = df.columns[1:]
-columns
