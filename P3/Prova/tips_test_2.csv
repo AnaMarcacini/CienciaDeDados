@@ -1,0 +1,4 @@
+credit_card,total_bill,Sunday,sex,time,size,tip_label
+2024,19.82,0,0,1,2,> 0.12
+8867,8.77,1,0,1,2,> 0.12
+9901,24.55,1,0,1,4,<=0.12
