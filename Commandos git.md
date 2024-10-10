@@ -1,7 +1,7 @@
- anahelena in IMT_CD_2024 on  Estudo [!] took 13,3s 
 ➜  git remote
-Ana
 origin
+professor
+visualisandoGraficos
 anahelena in IMT_CD_2024 on  Estudo [⇡] 
 ➜  git push Ana
 
